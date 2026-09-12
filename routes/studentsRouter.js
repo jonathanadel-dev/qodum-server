@@ -728,7 +728,7 @@ router.get('/adm-nos', async (req, res) => {
         res.status(200).json(students);
 
     } catch (err) {
-        res.status(500).json(err);
+        res.status(500).json("Error fetching students admission numbers");
     }
 });
 
